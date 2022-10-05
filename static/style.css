@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  
+
+}
+
+body{
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: -1;
+ 
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(59,59,59,0.4), rgba(59,59,59,0.4));
+  position: 0 5%;
+
+}
+
+/* Background video */
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100% ;
+  }
+}
+
+
+
+
+
+
+/*  Slow Show */
+.slow-show{
+  opacity: 0;
+  animation: ani 1.5s forwards;
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+/* TIMER */
+/* Numbers timer */
+.timer {
+  margin-top: 0px;
+  position: relative;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 3px #000;
+}
+/* Image Day/Night*/
+#imaaaga {
+  margin-top: -67px;
+ 
+}
+/* Timer background*/
+.timer-image {
+  margin-top: -133px;
+  position: absolute;
+  margin-left: 595px;
+  z-index: -1;
+
+}
+
+
+
+
+
+/* CHAT */
+/* Allies */
+.chat-text{
+  margin-left: 28.9%;
+  margin-top: 10.3px;
+  position: absolute;
+  font-size: 17px;
+  color: #ffffff; /*color: faeac9*/
+}
+/* placeholder text Type a message here. Example: 2641 2941-3241 */
+input::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #ffffff;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+/* ▲ ▼ */
+.chat-text-end {
+  margin-left: 1227px;
+  margin-top: 5px;
+  position: absolute;
+  font-size: 25px;
+  color: #576063;
+}
+/* 🙂 */
+.chat-text-image {
+  margin-left: 1289px;
+  margin-top: 9px;
+  position: absolute;
+  color: #adaeae;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+/* ? */
+.chat-text-ques {
+  margin-left: 1328px;
+  margin-top: 6px;
+  position: absolute;
+  color: #adaeae;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+/* Square */
+.chat-text-square {
+  width: 33px;
+  height: 33px;
+  background: #222828;
+  margin-left: 1317px;
+  margin-top: 3px;
+  position: absolute;
+}
+/*Chat design*/
+.chat-input {
+  width: 582px;
+  height: 36px;
+  margin-top: 0px;
+  padding-left: 78px;
+  padding-right: 140px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  background: linear-gradient(to left, rgba(169,208,113,0) 0%,rgba(0,0,0,1) 100%);
+  font-size: 17px;
+  color: #ffffff;
+}
+/* Chat output(result) */
+#end1 {
+  margin-top: -30px;
+  text-shadow: 3px 3px 3px #000;
+}
+
+
+
+
+
+/* created by dankYbat  */
+/* text: created by dankY*/
+.text_wrap {
+
+  position: fixed;
+  margin-top: 335px;
+  margin-left: 795px;
+  opacity: 0.8;
+  text-shadow: 3px 3px 3px #000;
+}
+/*Image GitHub*/
+.img-profile {
+  position: fixed;
+  margin-top: 160px; 
+  margin-left: 540px;
+  cursor: pointer;
+}
+
+.img-profile img {
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+  transition: 0.3s;
+ }
+.img-profile img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/*Dont show*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
