@@ -10,6 +10,18 @@
 
 <body>
 
+
+
+<!-- Prealoader -->
+<div class="mask">
+</div>
+
+
+
+
+
+
+
 <!-- Start -->
 <div class="hero">
     
@@ -25,8 +37,8 @@
     <div class="slow-show">
     
     <p id="random-timer" class="timer noselect"></p>
-    <a><img src="/roshantiming/static/top.png" class="timer-image"/></a> 
-    <center><p id="imaaaga" ></p></center>     
+    <a><img src="/roshantiming/static/top.png" class="timer-image selectDisable"/></a> 
+    <center><a id="imaaaga" ></a></center>     
     
     </div>
     
@@ -135,7 +147,15 @@
         openUrl('https://github.com/dankYoff');
         });
 
+        //Preloader
+        let mask = document.querySelector('.mask');
 
+        window.addEventListener('load',() => {  
+            mask.classList.add('hide');
+            setTimeout(()=>{
+                mask.remove();
+            }, 1500);
+        });
 
 
 

@@ -17,6 +17,36 @@ body{
  
 }
 
+
+
+
+
+
+
+/* Preloader */
+.mask{
+  width: 100%;
+  height: 100%;
+  background-image: url('/roshantiming/static/3.png');
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: 2.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.hide {
+  opacity: 0;
+}
+
+
+
+
+
+/* Gradient */
 .hero {
   width: 100%;
   height: 100vh;
@@ -33,7 +63,6 @@ body{
   z-index: -1;
 
 }
-
 @media (min-aspect-ratio: 16/9){
   .back-video{
     width: 100%;
@@ -207,4 +236,13 @@ input::-webkit-input-placeholder {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 
+}
+
+.selectDisable {
+  -drag: none;
+   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
