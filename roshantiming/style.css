@@ -4,8 +4,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
-  
-
 }
 
 body{
@@ -14,38 +12,30 @@ body{
   padding: 0;
   box-sizing: border-box;
   z-index: -1;
+  max-height: 100%;
  
 }
-
-
-
-
-
-
 
 /* Preloader */
 .mask{
   width: 100%;
-  height: 100vh;
-  background-image: url('/roshantiming/static/3.png');
+  height: 100%;
   background-size: cover;
+  background-image: url('/roshantiming/static/3.png');
   position: fixed;
   top: 0;
   z-index: 100;
-  transition: 0.6s;
+  transition: 2.5s;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
+  opacity: 0.8;
+  
 }
 
 .hide {
   opacity: 0;
 }
-
-
-
-
 
 /* Gradient */
 .hero {
@@ -78,11 +68,6 @@ body{
   }
 }
 
-
-
-
-
-
 /*  Slow Show */
 .slow-show{
   opacity: 0;
@@ -93,12 +78,13 @@ body{
   100% {opacity: 1;}
 }
 
-
-
-
-
 /* TIMER */
 /* Numbers timer */
+.slow-show{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .timer {
   margin-top: 0px;
   position: relative;
@@ -107,31 +93,41 @@ body{
   text-shadow: 3px 3px 3px #000;
 }
 /* Image Day/Night*/
-#imaaaga {
-  margin-top: -67px;
- 
+
+.slow-show>a{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -150px;
 }
 /* Timer background*/
 .timer-image {
-  margin-top: -133px;
-  position: absolute;
-  margin-left: 595px;
   z-index: -1;
-
+  height: 160px;
+  width: 350px;
+  top: -5px;
 }
-
-
-
-
+#imaaaga{
+  position: relative;
+  top: -226px;
+}
 
 /* CHAT */
 /* Allies */
+.slow-show.caht{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+  margin: 70px auto 0;
+  position: relative;
+}
 .chat-text{
-  margin-left: 28.9%;
-  margin-top: 10.3px;
+  left: 8px;
   position: absolute;
   font-size: 17px;
   color: #ffffff; /*color: faeac9*/
+
 }
 /* placeholder text Type a message here. Example: 2641 2941-3241 */
 input::-webkit-input-placeholder {
@@ -139,19 +135,20 @@ input::-webkit-input-placeholder {
   color: #ffffff;
   font-style: italic;
   font-family: 'Roboto', sans-serif;
+  
 }
 /* ▲ ▼ */
 .chat-text-end {
-  margin-left: 1227px;
-  margin-top: 5px;
+  right: 75px;
   position: absolute;
   font-size: 25px;
   color: #576063;
+
 }
 /* 🙂 */
 .chat-text-image {
-  margin-left: 1289px;
-  margin-top: 9px;
+  top: 8px;
+  right: 45px;
   position: absolute;
   color: #adaeae;
   font-family: 'Roboto', sans-serif;
@@ -159,8 +156,7 @@ input::-webkit-input-placeholder {
 }
 /* ? */
 .chat-text-ques {
-  margin-left: 1328px;
-  margin-top: 6px;
+  right: 12px;
   position: absolute;
   color: #adaeae;
   font-family: 'Roboto', sans-serif;
@@ -171,8 +167,7 @@ input::-webkit-input-placeholder {
   width: 33px;
   height: 33px;
   background: #222828;
-  margin-left: 1317px;
-  margin-top: 3px;
+  right: 0px;
   position: absolute;
 }
 /*Chat design*/
@@ -195,25 +190,33 @@ input::-webkit-input-placeholder {
 }
 
 
-
-
-
 /* created by dankYbat  */
 /* text: created by dankY*/
+.slow-show.img{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  width: 100%;
+  height: 100px;
+  margin-top: 290px;
+  flex-wrap: wrap;
+  margin-top: 317px;
+}
 .text_wrap {
-
-  position: fixed;
-  margin-top: 335px;
-  margin-left: 795px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 300px;
   opacity: 0.8;
   text-shadow: 3px 3px 3px #000;
+  /* border: 2px solid rgb(0, 255, 47); */
 }
 /*Image GitHub*/
 .img-profile {
-  position: fixed;
-  margin-top: 160px; 
-  margin-left: 540px;
+  width: 100px;
   cursor: pointer;
+  /* border: 2px solid rgb(0, 51, 255); */
 }
 
 .img-profile img {
@@ -226,7 +229,10 @@ input::-webkit-input-placeholder {
   opacity: 0.8;
   transform: scale(1.1);
 }
-
+.slow-show.red{
+  position: relative;
+  top: -420px;
+}
 /*Dont show*/
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
