@@ -230,7 +230,7 @@ input::-webkit-input-placeholder {
 }
 .slow-show.red{
   position: relative;
-  top: -420px;
+  top: -370px;
 }
 /*Dont show*/
 .noselect {
