@@ -199,9 +199,8 @@ input::-webkit-input-placeholder {
   flex-direction:row;
   width: 100%;
   height: 100px;
-  margin-top: 290px;
   flex-wrap: wrap;
-  margin-top: 317px;
+  margin-top: 270px;
 }
 .text_wrap {
   margin-top: 10px;
