@@ -7,15 +7,3 @@
     Format: Aegis Min-Max (5 min-3 min-3 min)
     Example: 27:13 
     Answer:  3213 3513-3813 😃
-
-
-# Social (Where you can find me🔍)
-
-
-### [Steam](https://steamcommunity.com/id/dankYbatoff/)
-
-### [YouTube](https://www.youtube.com/channel/UCOGqsd1lObd2tEKPMESn0yg)
-
-### __Discord:__ dankY#1157
-
-![Имя отутствует (online-video-cutter com)(2)(1)](https://img.icons8.com/color/344/dota.png)
